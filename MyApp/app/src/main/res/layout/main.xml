@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:layout_margin="10px"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:background="@drawable/util"
+		android:elevation="4dp"
+		android:padding="15dp"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_marginTop="5dp"
+			android:layout_alignParentLeft="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:text="Total: R$"
+				android:textSize="18dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:textSize="18dp"
+				android:textColor="#625DDB"
+				android:id="@+id/valTotal"
+				android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_marginTop="5dp"
+			android:layout_alignParentRight="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:textSize="18dp"
+				android:text="Restante: R$"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:textSize="18dp"
+				android:textColor="#625DDB"
+				android:id="@+id/valRest"
+				android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_marginTop="15dp"
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			
+			android:layout_marginTop="15dp"
+			android:id="@+id/moneyL"
+			android:elevation="4dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:layout_marginLeft="10dp"
+				android:id="@+id/im"
+				android:src="@drawable/money"
+				android:layout_width="40dp"
+				android:layout_height="50dp"/>
+
+			<TextView
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="15dp"
+				android:textColor="#000000"
+				android:textSize="18dp"
+				android:text="Dinheiro: "
+				android:layout_toRightOf="@+id/im"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/tvMoney"/>
+
+			<EditText
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dp"
+				android:id="@+id/money"
+				android:imeOptions="actionDone"
+				
+				android:hint="R$0.00"
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:singleLine="true"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_marginTop="100dp"
+			android:id="@+id/carDL"
+			
+			android:elevation="4dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:layout_marginLeft="10dp"
+				android:id="@+id/im"
+				android:src="@drawable/cartao"
+				android:layout_width="40dp"
+				android:layout_height="50dp"/>
+
+			<TextView
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="15dp"
+				android:textColor="#000000"
+				android:textSize="18dp"
+				android:text="Cartão Débito: "
+				android:layout_toRightOf="@+id/im"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/tvCarD"/>
+
+			<EditText
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dp"
+				android:id="@+id/carD"
+				android:imeOptions="actionDone"
+				
+				android:hint="R$0.00"
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:singleLine="true"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_marginTop="190dp"
+			android:id="@+id/carCL"
+			android:elevation="4dp"
+			
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:layout_marginLeft="10dp"
+				android:id="@+id/im"
+				android:src="@drawable/cartao"
+				android:layout_width="40dp"
+				android:layout_height="50dp"/>
+
+			<TextView
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="15dp"
+				android:textColor="#000000"
+				android:textSize="18dp"
+				android:text="Cartão Crédito: "
+				android:layout_toRightOf="@+id/im"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/tvCarC"/>
+
+			<EditText
+				android:layout_alignParentRight="true"
+				
+				android:layout_marginRight="10dp"
+				android:id="@+id/carC"
+				android:imeOptions="actionDone"
+				
+				android:hint="R$0.00"
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:singleLine="true"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_marginTop="280dp"
+			android:id="@+id/pixL"
+			android:elevation="4dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:layout_marginLeft="10dp"
+				android:id="@+id/im"
+				android:src="@drawable/pix"
+				android:layout_width="40dp"
+				android:layout_height="50dp"/>
+
+			<TextView
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="15dp"
+				android:textColor="#000000"
+				android:textSize="18dp"
+				android:text="Pix: "
+				android:layout_toRightOf="@+id/im"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/tvPix"/>
+
+			<EditText
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10dp"
+				android:id="@+id/pix"
+				android:hint="R$0.00"
+				android:imeOptions="actionDone"
+				android:layout_width="wrap_content"
+				android:layout_height="60dp"
+				android:singleLine="true"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

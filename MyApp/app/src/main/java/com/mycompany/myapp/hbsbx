@@ -1,0 +1,31 @@
+LayoutParams pr1 = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
+																				pr1.setMargins(10, 30, 10, 0);
+
+																				LinearLayout l2 = new LinearLayout(c);
+																				l2.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+																				final TextView tv = new TextView(c);
+
+																				tv.setText("Concluído!" + "\n");
+																				
+																				tv.setBackgroundResource(R.drawable.border);
+																				tv.setLayoutParams(pr1);
+																				l2.addView(tv);
+																				root.addView(l2);
+																				
+																				Handler hd6 = new Handler();
+																				hd6.postDelayed(new Runnable(){
+																					public void run(){
+																						LayoutParams pr1 = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
+																						pr1.setMargins(10, 30, 10, 0);
+
+																						LinearLayout l2 = new LinearLayout(c);
+																						l2.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+																						final TextView tv = new TextView(c);
+
+																						tv.setText("Importando Banco de Dados..." + "\n");
+																						tv.setBackgroundResource(R.drawable.border);
+																						tv.setLayoutParams(pr1);
+																						l2.addView(tv);
+																						root.addView(l2);
+																					}
+																				}, 900);
